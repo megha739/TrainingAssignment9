@@ -8,7 +8,15 @@
 </head>
 <body>
     <script>
-        
+        function check_string(str){
+            if(str.substring(0,3)=="new"){
+                return str
+
+            }
+            return "new "+str;
+        }
+        document.write(check_string("abc")+"<br>")
+        document.write(check_string("new abc"))
     </script>
 </body>
 </html>
